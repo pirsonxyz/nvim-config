@@ -230,5 +230,36 @@ return {
     config = function()
         require('crates').setup()
     end,
-},   },
+},
+
+  },
+   {
+        'xiyaowong/transparent.nvim',
+        lazy = false,
+    },
+  {
+    "glepnir/nerdicons.nvim",
+},
+  {
+  'vyfor/cord.nvim',
+  build = './build',
+  event = 'VeryLazy',
+  opts = {},
+},
+   {
+  "folke/todo-comments.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+},
+    {
+        'brenoprata10/nvim-highlight-colors',
+        lazy = false,
+        config = function()
+            require('nvim-highlight-colors').setup()
+        end,
+    },
  }
