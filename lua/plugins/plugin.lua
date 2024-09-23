@@ -10,15 +10,15 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  --{"folke/tokyonight.nvim"},
+  {"folke/tokyonight.nvim"},
   { "rebelot/kanagawa.nvim" },
-  --{"HoNamDuong/hybrid.nvim"},
-    --{"blazkowolf/gruber-darker.nvim"}--,
+  {"HoNamDuong/hybrid.nvim"},
+    {"blazkowolf/gruber-darker.nvim"},
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "tokyonight",
     },
   },
 
