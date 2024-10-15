@@ -241,12 +241,6 @@ return {
   {
     "glepnir/nerdicons.nvim",
 },
-  {
-  'vyfor/cord.nvim',
-  build = './build',
-  event = 'VeryLazy',
-  opts = {},
-},
    {
   "folke/todo-comments.nvim",
   dependencies = { "nvim-lua/plenary.nvim" },
