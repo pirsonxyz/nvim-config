@@ -14,12 +14,13 @@ return {
   { "rebelot/kanagawa.nvim" },
   {"HoNamDuong/hybrid.nvim"},
     {"blazkowolf/gruber-darker.nvim"},
+  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "gruvbox",
     },
   },
 
@@ -300,6 +301,6 @@ return {
 
     {"<Leader>l", "<Cmd>MultipleCursorsLock<CR>", mode = {"n", "x"}, desc = "Lock virtual cursors"},
   },
-},
 
+},
  }
