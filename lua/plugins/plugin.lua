@@ -11,6 +11,7 @@
 return {
   -- add gruvbox
   {"folke/tokyonight.nvim"},
+  {"neanias/everforest-nvim"},
   { "rebelot/kanagawa.nvim" },
   {"HoNamDuong/hybrid.nvim"},
     {"blazkowolf/gruber-darker.nvim"},
@@ -112,6 +113,13 @@ return {
       },
     },
   },
+  {
+    "seblj/roslyn.nvim",
+    ft = "cs",
+    opts = {
+        -- your configuration comes here; leave empty for default settings
+    }
+},
 
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   {

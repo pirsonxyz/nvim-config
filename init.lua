@@ -1,6 +1,11 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
+require("mason").setup({
+  registries = {
+    "github:mason-org/mason-registry",
+    "github:crashdummyy/mason-registry",
+  },
+})
 local lspconfig = require("lspconfig")
 
 vim.api.nvim_create_autocmd("LspAttach", {
