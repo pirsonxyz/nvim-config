@@ -279,13 +279,6 @@ return {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
     --- The below is optional, make sure to setup it properly if you have lazy=true
-    {
-      'MeanderingProgrammer/render-markdown.nvim',
-      opts = {
-        file_types = { "markdown", "Avante" },
-      },
-      ft = { "markdown", "Avante" },
-    },
   },
 },
   {
@@ -311,4 +304,18 @@ return {
   },
 
 },
+  -- For `plugins.lua` users.
+{
+    "OXY2DEV/markview.nvim",
+    lazy = false
+},
+  {
+  "lervag/vimtex",
+  lazy = false,     -- we don't want to lazy load VimTeX
+  -- tag = "v2.15", -- uncomment to pin to a specific release
+  init = function()
+    -- VimTeX configuration goes here, e.g.
+    vim.g.vimtex_view_method = "zathura"
+  end
+}
  }
