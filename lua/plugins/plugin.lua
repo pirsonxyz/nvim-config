@@ -120,7 +120,10 @@ return {
         -- your configuration comes here; leave empty for default settings
     }
 },
-
+  {
+  "NoahTheDuke/vim-just",
+  ft = { "just" },
+},
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -309,7 +312,7 @@ return {
     "OXY2DEV/markview.nvim",
     lazy = false
 },
-  {
+   {
   "lervag/vimtex",
   lazy = false,     -- we don't want to lazy load VimTeX
   -- tag = "v2.15", -- uncomment to pin to a specific release
