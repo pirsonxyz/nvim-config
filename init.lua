@@ -19,4 +19,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- Add more keybindings as needed
   end,
 })
+
+vim.g.lazyvim_check_order = false
 vim.keymap.set("n", "<leader>te", ":tabnew | term<CR>")
