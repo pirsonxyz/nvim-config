@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- Add more keybindings as needed
   end,
 })
-
+-- that's crazy
 vim.g.lazyvim_check_order = false
 vim.keymap.set("n", "<leader>te", ":tabnew | term<CR>")
 vim.opt.clipboard = "unnamed,unnamedplus"
